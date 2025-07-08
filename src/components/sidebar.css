@@ -1,0 +1,150 @@
+.sidebarcontainer{
+    display: flex;
+    flex-direction: row;
+}
+.sidecontainer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+   
+    height:100% ;
+  
+    
+}
+.states{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{margin: 0;
+padding: 0;}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    border:1.5px solid white;
+    border-radius: 5px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    
+}
+.navbar h1{
+    background: linear-gradient(90deg,rgb(213, 22, 22), rgb(33, 29, 235), rgb(255, 34, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  background-size: 100%,100%;
+  position: fixed;
+}
+.homecontainer2{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    background-color:transparent;
+    color: black;
+    height: calc(100vh - 80px);
+    padding-top:5px ;
+    position: fixed;
+    left: 0;
+    top: 82px;
+    border: 2px solid white;
+    border-top: none;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    
+}
+.content{
+    display: flex;
+    height: 100%;
+    margin-top: 90px;
+}
+.sidenav i{
+cursor: pointer;
+}
+.sidenavbuttonstop,.sidenavbuttonsbottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.sidenavbuttonsbottom{
+    margin-bottom: 20px;
+}
+
+.togglebar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color:transparent;
+    color:black;
+    width: 150px;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1000;
+    height: calc(100vh - 80px);
+    margin-left: 20px;
+    position: fixed;
+    left: 50px;
+    top: 82px;
+    border-right: 2px solid white;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.togglebar .botul {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.togglebar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    list-style-type: none;
+    cursor: pointer;
+
+}
+.togglebar .topul {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+.menu{
+    width: 50px;
+    height: 22px;
+    background-color:transparent;
+    color:black;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+.asidebar.show{
+    transform: translateX(0);
+}
+.asidebar.hide{
+    transform: translateX(-100%);
+}

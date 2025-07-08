@@ -1,0 +1,35 @@
+.timer-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background: conic-gradient(#00f 0deg, #00f 360deg); /* Optional static ring */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spin-border {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top: 5px solid red;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.time-text {
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1;
+}

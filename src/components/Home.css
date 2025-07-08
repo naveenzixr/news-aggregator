@@ -1,0 +1,64 @@
+.homecontainer{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+
+}
+.takequiz{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+    border: 3px solid,black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: 0 0 10px #fff,0 0 20px #fff;
+    
+
+}
+.takequiz h2{
+     background: linear-gradient(90deg,rgb(22, 175, 213), rgb(33, 29, 235), rgb(255, 0, 144));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  background-size: 100%,100%;
+}
+.takequiz p{
+    color: white;
+    animation: blink 0.7s ease-in infinite;
+}
+@keyframes blink{
+    0%{color: white;}
+    100%{color: black;}
+}
+@keyframes float{
+    0%{transform: translateY(-5px);}
+    100%{transform: translateY(5px);}
+
+}
+.takequiz h1{
+    background: rgb(251, 255, 196);
+    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  background-size: 100%,100%;
+  animation: float 1s alternate infinite;
+}
+
+#homestart{
+    width:120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid black;
+    background: linear-gradient(90deg, blue,rgb(37, 236, 196),rgb(244, 68, 197),purple);
+    background-size: 200% 200%;
+    animation: gradient 3s ease-in infinite;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
